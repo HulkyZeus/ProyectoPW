@@ -1,5 +1,5 @@
 export const environment = {
   production: true,
-  urlBase: "https://javaapievents.azurewebsites.net",
-  urlPictures: "https://javaapievents.azurewebsites.net/uploads/"
+  urlBase: "https://proyectopw.azurewebsites.net",
+  urlPictures: "https://proyectopw.azurewebsites.net/uploads/"
 };
