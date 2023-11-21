@@ -233,6 +233,26 @@
         <!-- foooter -->
         <footer class="footer">            
             <p>Copyright <script>document.write(new Date().getFullYear())</script> &copy; <a href="http://www.devcrud.com">DevCRUD</a></p>
+            <!-- Dropdown de Google Translate -->
+  <div id="google_translate_element"></div>
+
+
+  <!-- Script de Google Translate -->
+  <script type="text/javascript">
+    function googleTranslateElementInit() {
+      new google.translate.TranslateElement({
+        pageLanguage: 'es',
+        layout: google.translate.TranslateElement.InlineLayout.SIMPLE,
+        autoDisplay: false,
+        includedLanguages: 'es,en,fr,de' // Incluir español como primer idioma
+      }, 'google_translate_element');
+
+      var select = document.querySelector('.goog-te-combo');
+      select.value = 'es'; // Establecer español como idioma predeterminado
+      select.dispatchEvent(new Event('change'));
+    }
+  </script>
+  <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
         </footer><!-- End of Footer-->  
         
     </div><!--End of Container -->      

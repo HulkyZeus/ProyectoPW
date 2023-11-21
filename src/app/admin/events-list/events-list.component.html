@@ -10,6 +10,7 @@
         <th scope="col">Nombre</th>
         <th scope="col">Ubicación</th>
         <th scope="col">Fecha</th>
+        <th scope="col">Organizador</th>
         <th>Acciones</th>
       </tr>
     </thead>
@@ -19,6 +20,7 @@
         <td>{{item.name}}</td>
         <td>{{item.location}}</td>
         <td>{{item.date}}</td>
+        <td>{{item.planner}}</td>
         <td>
           <a type="button" class="btn btn-primary" [routerLink]="'/admin/dash/detail/' + item.id">Editar</a>
           <button type="button" class="btn btn-danger mx-2" (click)="deleteEvent(item.id)">Borrar</button>
